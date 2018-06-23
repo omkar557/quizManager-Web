@@ -3,32 +3,29 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Quiz manager application</title>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<link rel="stylesheet" type="text/css" href="CSS_Files/login.css">
 
-<link rel="stylesheet"
-	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 </head>
+
 <body>
-	<div>Welcome</div>
-	<div class="container">
+<div id="fullscreen_bg" class="fullscreen_bg"/>
 
-		<form action="login" method="post">
-			<div class="row">
-				<div class="col-md-12 mb-3">
-					<label for="login">Login</label> <input name="login"
-						class="form-control" type="text" />
-				</div>
-				<div class="col-md-12 mb-3">
-					<label>Password</label> <input class="form-control" name="password"
-						type="password" />
-				</div>
-				<button class="btn btn-primary" type="submit">Login</button>
-			</div>
-		</form>
-	</div>
+<div class="container">
 
+	<form class="form-signin" action="login" method="post">
+		<h1 class="form-signin-heading text-muted">Sign In</h1>
+		<input name="login" type="text" class="form-control" placeholder="Email address" required="" autofocus="">
+		<input name="password" type="password" class="form-control" placeholder="Password" required="">
+		<button class="btn btn-lg btn-primary btn-block" type="submit">
+			Sign In
+		</button>
+	</form>
 
-	<script
-		src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</div>
 
 </body>
 </html>
